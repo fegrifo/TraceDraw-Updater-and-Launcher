@@ -1,0 +1,16 @@
+[package]
+name = "tracedraw-launcher"
+version = "0.1.0"
+edition = "2024"
+description = "A small Linux launcher and updater for TraceDraw"
+license = "MIT OR Apache-2.0"
+
+[dependencies]
+anyhow = "1"
+eframe = { version = "0.31", default-features = false, features = ["default_fonts", "glow", "wayland", "x11"] }
+flate2 = "1"
+reqwest = { version = "0.12", default-features = false, features = ["blocking", "json", "rustls-tls"] }
+rfd = "0.15"
+serde = { version = "1", features = ["derive"] }
+tar = "0.4"
+
